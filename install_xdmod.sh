@@ -14,7 +14,7 @@ cp phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/
 wget https://github.com/ubccr/xdmod/releases/download/v6.6.0/xdmod-6.6.0-1.0.el7.centos.noarch.rpm
 yum install -y xdmod-6.6.0-1.0.el7.centos.noarch.rpm
 
-sed -i 's/^;date.timezone.*/date.timezone\=New_York/' /etc/php.ini
+sed -i 's/^;date.timezone.*/date.timezone\=America\/New_York/' /etc/php.ini
 
 mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 cd '/usr' ; /usr/bin/mysqld_safe --datadir='/var/lib/mysql' &
